@@ -11,48 +11,32 @@ Open a Terminal (OSX/LINUX) or CMD (WINDOWS) and follow the below instructions.
 
 ## Prerequisites
 
-We have provided a requirements.txt for you to setup your **python3.6.8 environment.**
+**Has to be python3.6.8, other tensorflow will not install**
+
+Anaconda: https://www.anaconda.com/products/distribution
+
+Anaconda helps us manage multiple versions of Python. You could also install python 3.6.8 directly, but we recommend using Anaconda.
 
 Python 3.6.8 Download.
 https://www.python.org/downloads/release/python-368/?fbclid=IwAR2tjkyGDbWLivj2TVRRBYpB5hSFk7LmKcCpCKJU9ASrmq2CNcdxwsSZKxg
-
-**Has to be python3.6.8, other tensorflow will not install**
 
 Change directories to flappy bird folder
 ```
 cd /path/to/flappy/folder/
 ```
 
-First off, create your virtual environment by entering the below command
+If on Windows, open Anaconda Prompt (easiest way is to look it up on the start menu by pressing the windows key).
+Otherwise, open any terminal.
 
-### Mac OSX / Linux
-
-If on OSX or Linux, enter the following into terminal
-```
-python3.6 -m venv flappyenv
-
-source flappyenv/bin/activate
-
-pip install -r requirements.txt
-```
-
-### Windows
-
-If on windows, you may have to run the following in order to install the virtual environment tool
+Then run these to install python 3.6.8 and all the dependencies.
 
 ```
-pip3.6 install virtualenv
+conda create -n flappy python=3.6.8
+conda activate flappy
+python -m pip install -r requirements.txt
 ```
 
-Then, you have to run the following to make and activate the venv
-```
-virtualenv flappyenv
 
-flappyenv\Scripts\activate.bat
-
-pip install -r requirements.txt
-
-```
 ### RUN
 
 Once you have got your venv activated, run the following command
