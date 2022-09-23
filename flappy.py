@@ -10,6 +10,8 @@ import numpy as np
 from keras.models import Sequential
 from keras.layers import Dense, Activation
 
+from typing import List
+
 FPS = 60
 SCREENWIDTH  = 288.0
 SCREENHEIGHT = 512.0
@@ -25,7 +27,7 @@ IMAGES, SOUNDS, HITMASKS = {}, {}, {}
 
 load_saved_pool = False
 save_current_pool = True
-current_pool = []
+current_pool: List[Sequential] = []
 fitness = []
 total_models = 50
 
