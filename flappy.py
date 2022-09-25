@@ -3,7 +3,7 @@ import random
 import sys
 
 import pygame
-from pygame.locals import *
+from pygame.locals import QUIT,KEYDOWN,K_ESCAPE
 
 import numpy as np
 
