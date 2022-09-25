@@ -42,4 +42,8 @@ Once you have got your venv activated, run the following command
 python flappy.py
 ```
 
+### References
+https://github.com/sourabhv/FlapPyBird
+https://github.com/erilyth/Flappy-Bird-Genetic-Algorithms
+
 
