@@ -57,8 +57,6 @@ def create_model():
     model.add(Dense(1, input_shape=(3,)))
     model.add(Activation('sigmoid'))
 
-    model.compile(loss='mse',optimizer='adam')
-
     return model
 
 def predict_action(height, dist, pipe_height, model_num):
