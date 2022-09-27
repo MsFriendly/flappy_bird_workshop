@@ -73,7 +73,12 @@ def model_crossover(parent1, parent2):
     # obtain parent weights
     # get random gene
     # swap genes
+    global current_pool
+   
     raise NotImplementedError
+    # ...
+    gene = random.randint(0,len(new_weight1)-1)
+    # ...
 
 
 
@@ -81,6 +86,8 @@ def model_crossover(parent1, parent2):
 def model_mutate(weights):#,generation):
     # mutate each models weights
     raise NotImplementedError
+    # ...
+    return weights
 
 
 
@@ -137,6 +144,8 @@ def showGameOverScreen(crashInfo):
     for select in range(total_models // 2):
         # [TODO]
         # add two new crossed and mutated weights to the new weights list.
+        cross_over_weights = model_crossover(parent1,parent2)
+        # ...
 
     # Reset fitness scores for new round
     # Set new generation weights
